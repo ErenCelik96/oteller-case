@@ -1,0 +1,6 @@
+.selectbox {
+  max-width: 6rem;
+  height: 2.2rem;
+  border: 3px solid var(--primary-color);
+  border-radius: 1rem;
+}

@@ -2,6 +2,7 @@ import React, { useMemo } from "react";
 import { useAppStore } from "@/store/store";
 import { Currency, Language, Symbols } from "@/types/types";
 import { useRouter } from "next/router";
+import styles from "./Selector.module.css";
 
 export const Selector: React.FC<{
   type: "lang" | "currency";
@@ -36,7 +37,11 @@ export const Selector: React.FC<{
   };
 
   return (
-    <select value={currentValue} onChange={(e) => handleChange(e.target.value)}>
+    <select
+      value={currentValue}
+      onChange={(e) => handleChange(e.target.value)}
+      className={styles["selectbox"]}
+    >
       {options?.map((option) => (
         <option key={option.value} value={option.value}>
           {option.symbol}
