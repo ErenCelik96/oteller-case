@@ -14,3 +14,19 @@ export enum Symbols {
   EUR = "€",
   TRY = "₺",
 }
+
+export interface Hotel {
+  id: string;
+  name: string;
+  description: string;
+  price: number;
+  currency: string;
+  image: string;
+  stars: number;
+  location: string;
+}
+
+export interface Content {
+  Common: Record<string, string>;
+  HomePage: Record<string, string>;
+}

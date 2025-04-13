@@ -8,6 +8,7 @@ import { parseCookies } from "nookies";
 import { AppCurrency, AppLanguage } from "@/types/constant";
 import { Layout } from "@/components/Layout";
 import "../styles/globals.css";
+
 export default function App({ Component, pageProps }: AppProps) {
   const { language, setLanguage, currency, setCurrency } = useAppStore();
   const [messages, setMessages] = useState<Record<string, any>>({});
