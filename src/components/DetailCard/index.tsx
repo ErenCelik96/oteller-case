@@ -19,6 +19,8 @@ export const DetailCard = (props: Props) => {
           className={styles.hotelDetailImage}
           width={500}
           height={300}
+          placeholder="blur"
+          blurDataURL="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzAwIiBoZWlnaHQ9IjIwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iMzAwIiBoZWlnaHQ9IjIwMCIgZmlsbD0iI2YxZjFmMSIvPjwvc3ZnPg=="
         />
         <div className={styles.hotelDetailInfo}>
           <h1>{hotel.name}</h1>
