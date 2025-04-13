@@ -21,6 +21,8 @@ export const Card = (props: Props) => {
         className={styles.hotelImage}
         width={300}
         height={200}
+        placeholder="blur"
+        blurDataURL="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzAwIiBoZWlnaHQ9IjIwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iMzAwIiBoZWlnaHQ9IjIwMCIgZmlsbD0iI2YxZjFmMSIvPjwvc3ZnPg=="
       />
       <div className={styles.hotelInfo}>
         <h2 className={styles.hotelName}>{hotel.name}</h2>
