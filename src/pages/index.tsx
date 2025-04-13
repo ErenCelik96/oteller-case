@@ -20,12 +20,7 @@ const HomePage = ({ contents, hotels }: HomePageProps) => {
       <div className={styles.hotelGrid}>
         {hotels &&
           hotels?.map((hotel) => (
-            <Card
-              key={hotel.id}
-              hotel={hotel}
-              language={language}
-              contents={contents}
-            />
+            <Card key={hotel.id} hotel={hotel} language={language} />
           ))}
       </div>
     </div>

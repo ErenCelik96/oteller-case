@@ -1,16 +1,17 @@
-import { Content, Currency, Hotel, Symbols } from "@/types/types";
+import { Currency, Hotel, Symbols } from "@/types/types";
 import Link from "next/link";
 import styles from "./Card.module.css";
 import Image from "next/image";
+import { useTranslations } from "next-intl";
 
 type Props = {
   hotel: Hotel;
   language: string;
-  contents: Content;
 };
 
 export const Card = (props: Props) => {
-  const { hotel, language, contents } = props;
+  const { hotel, language } = props;
+  const t = useTranslations();
 
   return (
     <div key={hotel.id} className={styles.hotelCard}>
@@ -38,9 +39,7 @@ export const Card = (props: Props) => {
             {hotel.price}
           </p>
           <Link href={`/${hotel.id}`} locale={language}>
-            <button className={styles.detailsButton}>
-              {contents?.Common?.viewDetails}
-            </button>
+            <button className={styles.detailsButton}>{t("viewDetails")}</button>
           </Link>
         </div>
       </div>

@@ -2,9 +2,13 @@ import React from "react";
 import styles from "./Layout.module.css";
 import { Header } from "../Header";
 
-export const Layout: React.FC<{ children: React.ReactNode }> = ({
-  children,
-}) => {
+type Props = {
+  children: React.ReactNode;
+};
+
+export const Layout = (props: Props) => {
+  const { children } = props;
+
   return (
     <div className={styles["layout"]}>
       <Header />

@@ -4,9 +4,12 @@ import { Currency, Language, Symbols } from "@/types/types";
 import { useRouter } from "next/router";
 import styles from "./Selector.module.css";
 
-export const Selector: React.FC<{
+type Props = {
   type: "lang" | "currency";
-}> = ({ type }) => {
+};
+
+export const Selector = (props: Props) => {
+  const { type } = props;
   const router = useRouter();
   const { language, setLanguage, currency, setCurrency } = useAppStore();
 

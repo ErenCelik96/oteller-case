@@ -1,7 +1,7 @@
 import { Selector } from "../Selector";
 import styles from "./Header.module.css";
 
-export const Header: React.FC = () => {
+export const Header = () => {
   return (
     <div className={styles["header"]}>
       <h1 className={styles["title"]}>Oteller</h1>
