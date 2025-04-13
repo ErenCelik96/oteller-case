@@ -8,8 +8,3 @@ export enum Currency {
   EUR = "EUR",
   TRY = "TRY",
 }
-
-export enum Theme {
-  LIGHT = "light",
-  DARK = "dark",
-}
