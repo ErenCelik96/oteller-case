@@ -1,0 +1,16 @@
+{
+  "Common": {
+    "viewDetails": "View Details",
+    "backToList": "Back to List",
+    "description": "Description",
+    "amenities": "Amenities",
+    "booking": "Booking",
+    "hotelListTitle": "Our Hotels",
+    "hotelListDescription": "Discover our selection of the finest hotels",
+    "hotelNotFound": "Hotel not found"
+  },
+  "HomePage": {
+    "title": "Discover Our Hotels",
+    "description": "Find the perfect accommodation for your next trip"
+  }
+}

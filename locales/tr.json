@@ -1,0 +1,16 @@
+{
+  "Common": {
+    "viewDetails": "Detayları Gör",
+    "backToList": "Listeye Dön",
+    "description": "Açıklama",
+    "amenities": "Olanaklar",
+    "booking": "Rezervasyon",
+    "hotelListTitle": "Otellerimiz",
+    "hotelListDescription": "En iyi otellerimizden seçkiler keşfedin",
+    "hotelNotFound": "Otel bulunamadı"
+  },
+  "HomePage": {
+    "title": "Otellerimizi Keşfedin",
+    "description": "Sonraki seyahatiniz için mükemmel konaklama yerini bulun"
+  }
+}
