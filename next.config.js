@@ -5,6 +5,15 @@ const nextConfig = {
     locales: ["en", "tr"],
     defaultLocale: "tr",
   },
+  images: {
+    remotePatterns: [
+      {
+        protocol: "https",
+        hostname: "picsum.photos",
+        pathname: "/seed/picsum/**",
+      },
+    ],
+  },
 };
 
 module.exports = nextConfig;

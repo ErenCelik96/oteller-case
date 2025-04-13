@@ -24,6 +24,7 @@ export interface Hotel {
   image: string;
   stars: number;
   location: string;
+  amenities?: string[];
 }
 
 export interface Content {

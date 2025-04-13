@@ -1,6 +1,7 @@
 import { Content, Currency, Hotel, Symbols } from "@/types/types";
 import Link from "next/link";
 import styles from "./Card.module.css";
+import Image from "next/image";
 
 type Props = {
   hotel: Hotel;
@@ -13,7 +14,13 @@ export const Card = (props: Props) => {
 
   return (
     <div key={hotel.id} className={styles.hotelCard}>
-      <img src={hotel.image} alt={hotel.name} className={styles.hotelImage} />
+      <Image
+        src={hotel.image}
+        alt={hotel.name}
+        className={styles.hotelImage}
+        width={300}
+        height={200}
+      />
       <div className={styles.hotelInfo}>
         <h2 className={styles.hotelName}>{hotel.name}</h2>
         <p className={styles.hotelLocation}>{hotel.location}</p>
