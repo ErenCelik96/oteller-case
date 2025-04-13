@@ -3,4 +3,7 @@
   height: 2.2rem;
   border: 3px solid var(--primary-color);
   border-radius: 1rem;
+  background-color: transparent;
+  font-weight: bold;
+  font-size: 15px;
 }

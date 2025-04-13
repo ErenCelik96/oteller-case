@@ -1,0 +1,26 @@
+.header {
+  background-color: var(--secondary-color);
+  box-shadow: 0 0 10px black;
+  height: 3rem;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 5rem;
+  border-radius: 0 0 0.5rem 0.5rem;
+
+  @media screen and (max-width: 768px) {
+    padding: 0 2rem;
+  }
+}
+
+.title {
+  color: var(--primary-color);
+}
+
+.selectors {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 9.5rem;
+}

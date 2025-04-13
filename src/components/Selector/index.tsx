@@ -44,7 +44,7 @@ export const Selector: React.FC<{
     >
       {options?.map((option) => (
         <option key={option.value} value={option.value}>
-          {option.symbol}
+          {option.symbol} {type === "currency" && option.value}
         </option>
       ))}
     </select>
