@@ -1,0 +1,125 @@
+.hotelDetail {
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.hotelHeader {
+  display: flex;
+  flex-direction: column;
+}
+
+.hotelDetailImage {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+}
+
+.hotelDetailInfo {
+  padding: 2rem;
+  background-color: var(--secondary-color);
+}
+
+.hotelDetailInfo h1 {
+  color: var(--primary-color);
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+  font-size: 2rem;
+}
+
+.location {
+  font-size: 1.1rem;
+  color: var(--text-color);
+  margin-bottom: 1rem;
+}
+
+.stars {
+  color: var(--primary-color);
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+
+.star {
+  margin-right: 4px;
+}
+
+.price {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: var(--primary-color);
+  margin-bottom: 0;
+}
+
+.hotelDescription,
+.hotelAmenities {
+  padding: 1.5rem 2rem;
+  border-top: 1px solid #eee;
+}
+
+.hotelDescription h2,
+.hotelAmenities h2 {
+  color: var(--primary-color);
+  margin-top: 0;
+  font-size: 1.5rem;
+}
+
+.hotelDescription p {
+  color: var(--text-color);
+  line-height: 1.6;
+}
+
+.amenitiesList {
+  list-style: none;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+}
+
+.amenityItem {
+  color: var(--text-color);
+  display: flex;
+  align-items: center;
+  background-color: var(--secondary-color);
+  padding: 0.7rem 1rem;
+  border-radius: 4px;
+}
+
+.amenityItem::before {
+  content: "✓";
+  color: var(--primary-color);
+  font-weight: bold;
+  margin-right: 0.5rem;
+}
+
+@media (min-width: 768px) {
+  .hotelHeader {
+    flex-direction: row;
+  }
+
+  .hotelDetailImage {
+    width: 50%;
+    height: auto;
+    min-height: 400px;
+  }
+
+  .hotelDetailInfo {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .amenitiesList {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 576px) {
+  .amenitiesList {
+    grid-template-columns: 1fr;
+  }
+}
