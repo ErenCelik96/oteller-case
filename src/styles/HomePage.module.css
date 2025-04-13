@@ -1,0 +1,34 @@
+.container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 1rem;
+  padding: 0 1rem;
+}
+
+.hotelGrid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.5rem;
+  width: 100%;
+  max-width: 1200px;
+  margin-top: 2rem;
+}
+
+@media (max-width: 1200px) {
+  .hotelGrid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 900px) {
+  .hotelGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .hotelGrid {
+    grid-template-columns: 1fr;
+  }
+}
