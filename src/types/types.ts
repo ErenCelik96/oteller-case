@@ -8,3 +8,9 @@ export enum Currency {
   EUR = "EUR",
   TRY = "TRY",
 }
+
+export enum Symbols {
+  USD = "$",
+  EUR = "€",
+  TRY = "₺",
+}
