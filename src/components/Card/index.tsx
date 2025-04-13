@@ -11,7 +11,7 @@ type Props = {
 
 export const Card = (props: Props) => {
   const { hotel, language } = props;
-  const t = useTranslations();
+  const t = useTranslations("Common");
 
   return (
     <div key={hotel.id} className={styles.hotelCard}>
