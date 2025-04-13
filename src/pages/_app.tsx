@@ -46,7 +46,7 @@ export default function App({ Component, pageProps }: AppProps) {
   }, [router.locale]);
 
   return (
-    <NextIntlProvider messages={messages} locale={router.locale || "tr"}>
+    <NextIntlProvider messages={messages} locale={router.locale || Language.TR}>
       <Layout>
         <Component {...pageProps} />
       </Layout>
